@@ -13,6 +13,12 @@ export default {
     </template> 
     </input-box>`,
   }),
+  argTypes: {
+    input: {
+      description: 'v-model绑定的值，使用对象形式',
+      // type: Object
+    }
+  },
 }
 export const elInput = {
   args: {
