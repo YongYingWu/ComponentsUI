@@ -5,21 +5,43 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "element-ui": "^2.15.14",
+    "node-sass": "6.0",
     "vue": "^2.6.14"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
+    "@storybook/addon-essentials": "^7.4.0",
+    "@storybook/addon-interactions": "^7.4.0",
+    "@storybook/addon-links": "^7.4.0",
+    "@storybook/blocks": "^7.4.0",
+    "@storybook/testing-library": "^0.2.0",
+    "@storybook/vue": "^7.4.0",
+    "@storybook/vue-webpack5": "^7.4.0",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "css-loader": "^6.8.1",
     "eslint": "^7.32.0",
+    "eslint-plugin-storybook": "^0.6.13",
     "eslint-plugin-vue": "^8.0.3",
-    "vue-template-compiler": "^2.6.14"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.66.1",
+    "sass-loader": "^13.3.2",
+    "storybook": "^7.4.0",
+    "style-loader": "^3.3.3",
+    "vue-docgen-api": "^4.74.0",
+    "vue-loader": "^15.10.2",
+    "vue-template-compiler": "^2.7.14",
+    "webpack": "^5.88.2"
   },
   "eslintConfig": {
     "root": true,
@@ -28,7 +50,8 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "eslint:recommended"
+      "eslint:recommended",
+      "plugin:storybook/recommended"
     ],
     "parserOptions": {
       "parser": "@babel/eslint-parser"
