@@ -1,0 +1,19 @@
+$extend-width: 100px;
+.top {
+  display: flex;
+  justify-content: space-between;
+  .search-box {
+    display: flex;
+    // flex-wrap: wrap;
+  }
+  .extend-col {
+    min-width: $extend-width;
+    width: $extend-width;
+    ::v-deep .el-input .el-input__suffix {
+      display: none;
+    }
+    ::v-deep .el-cascader__tags{
+      right: 0;
+    }
+  }
+}

@@ -1,4 +1,5 @@
 /** @type { import('@storybook/vue-webpack5').StorybookConfig } */
+const path = require('path');
 const config = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)", "../src/**/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
   addons: [
@@ -8,7 +9,6 @@ const config = {
     {
       name: '@storybook/addon-docs',
       options: {
-        // naming could get better, someone help me :(
         vueDocgenOptions: { alias: { '@': path.resolve(__dirname, '../src') }}
       }
     }

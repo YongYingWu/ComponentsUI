@@ -22,7 +22,7 @@
   .element {
     flex: 1;
   }
-  ::v-deep .el-input.el-input--suffix > * {
+  ::v-deep .el-input__inner {
     border: none;
   }
 } 

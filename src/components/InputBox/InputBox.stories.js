@@ -1,7 +1,6 @@
-/* eslint-disable storybook/story-exports */
-import InputBox from './InputBox'
+import InputBox from '../InputBox'
 export default {
-  title: 'Example/InputBox',
+  title: '组件/输入框  InputBox',
   component: InputBox,
   tags: ['autodocs'],
   render: (args, { argTypes }) => ({

@@ -1,0 +1,25 @@
+.container {
+  padding: 7px;
+  .search-content { 
+    // transition: linear .2s;
+    flex-wrap: wrap;
+    height: 40px;
+    overflow: hidden;
+    display: flex;
+    & > * {
+      flex: 0 0 200px;
+      min-width: 200px;
+      margin-right: 4px;
+      margin-bottom: 14px;
+    }
+  }
+  .search-content-wrap{
+    // transition: linear .2s;
+    height: fit-content;
+    // max-height: 100px;
+  }
+  .search-button {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
